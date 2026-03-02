@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilares - Ciudadanía Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #00796b 0%, #004d40 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .content-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .content-box h3 {
+            color: #00796b;
+            margin-bottom: 1rem;
+        }
+
+        .content-box ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-box li {
+            margin-bottom: 0.7rem;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/mexico-flag-icon.jpg" alt="Logo Ciudadanía Digital México">
+                <span>Ciudadanía Digital México</span>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="que-es.html">¿Qué es?</a></li>
+                <li><a href="pilares.html">Pilares</a></li>
+                <li><a href="participar.html">Cómo Participar</a></li>
+                <li><a href="derechos.html">Derechos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Pilares de la Ciudadanía Digital</h1>
+
+        <div class="content-box">
+            <h3>🔒 Seguridad Digital</h3>
+            <p>Protege tu información personal, contraseñas y datos sensibles. Usa contraseñas fuertes, habilita autenticación de dos factores y mantente alerta ante estafas en línea.</p>
+            <ul>
+                <li>Crear contraseñas complejas y únicas</li>
+                <li>Evitar compartir información personal</li>
+                <li>Reconocer phishing y estafas</li>
+                <li>Mantener software actualizado</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h3>⚖️ Privacidad y Datos</h3>
+            <p>Entiende cómo se recopilan y utilizan tus datos. Conoce tus derechos sobre privacidad y cómo proteger tu información en redes sociales y plataformas digitales.</p>
+            <ul>
+                <li>Revisar configuración de privacidad</li>
+                <li>Comprender términos de servicio</li>
+                <li>Controlar el acceso a datos personales</li>
+                <li>Conocer el RGPD y leyes similares</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h3>💬 Comportamiento Ético</h3>
+            <p>Respeta a otros en línea, evita el ciberacoso, no difundas desinformación y sé responsable con tu huella digital.</p>
+            <ul>
+                <li>Evitar el ciberacoso y bullying</li>
+                <li>Verificar información antes de compartir</li>
+                <li>Respetar derechos de autor</li>
+                <li>Mantener comunicación respetuosa</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h3>🎓 Alfabetización Digital</h3>
+            <p>Desarrolla habilidades para usar tecnología de forma efectiva, crítica y creativa en diferentes contextos.</p>
+            <ul>
+                <li>Usar herramientas digitales apropiadamente</li>
+                <li>Evaluar fuentes de información</li>
+                <li>Crear contenido digital responsable</li>
+                <li>Comprender algoritmos y sesgos en línea</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ciudadanía Digital México. Todos los derechos reservados.</p>
+        <p>🇲🇽 Construyamos juntos un México más digital y seguro</p>
+    </footer>
+</body>
+</html>

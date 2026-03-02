@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es? - Ciudadanía Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #00796b 0%, #004d40 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            color: #00796b;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/mexico-flag-icon.jpg" alt="Logo Ciudadanía Digital México">
+                <span>Ciudadanía Digital México</span>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="que-es.html">¿Qué es?</a></li>
+                <li><a href="pilares.html">Pilares</a></li>
+                <li><a href="participar.html">Cómo Participar</a></li>
+                <li><a href="derechos.html">Derechos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">¿Qué es la Ciudadanía Digital?</h1>
+        
+        <div class="cards">
+            <div class="card">
+                <h2>💡 Definición</h2>
+                <p>La ciudadanía digital es el conjunto de competencias, actitudes y valores que permite a las personas participar activamente y responsablemente en la sociedad digital, ejerciendo derechos y cumpliendo deberes en el mundo virtual.</p>
+            </div>
+            <div class="card">
+                <h2>🌍 Alcance Global</h2>
+                <p>En un mundo cada vez más conectado, la ciudadanía digital es fundamental para navegar por internet de forma segura, ética y responsable, sin importar la edad o el contexto.</p>
+            </div>
+            <div class="card">
+                <h2>📱 Era Digital</h2>
+                <p>Con el crecimiento exponencial de la tecnología, es esencial que todos desarrollemos habilidades digitales y comportamientos éticos para construir una comunidad en línea positiva.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ciudadanía Digital México. Todos los derechos reservados.</p>
+        <p>🇲🇽 Construyamos juntos un México más digital y seguro</p>
+    </footer>
+</body>
+</html>
