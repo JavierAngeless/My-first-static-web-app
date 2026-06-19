@@ -3,6 +3,7 @@ const root = inPages ? '../' : '';
 const links = [
   ['Inicio', root + 'index.html'],
   ['Ciudadanía Digital', root + 'pages/ciudadania-digital.html'],
+  ['Cómo participar', root + 'pages/participar.html'],
   ['México Digital', root + 'pages/mexico-digital.html'],
   ['Mundo Digital', root + 'pages/mundo.html'],
   ['Recursos', root + 'pages/recursos.html'],
