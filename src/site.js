@@ -13,7 +13,12 @@ const links = [
 const current = location.pathname.split('/').pop() || 'index.html';
 const header = document.querySelector('#site-header');
 header.className = 'site-header';
-header.innerHTML = `<nav class="nav container" aria-label="Navegación principal"><a class="brand" href="${root}index.html"><img src="${root}assets/mexico-flag-icon.jpg" alt="Bandera de México"><span>Ciudadanía<br><strong>Digital México</strong></span></a><details class="menu" open><summary>Menú</summary><ul>${links.map(([name,url]) => `<li><a ${url.endsWith(current) ? 'aria-current="page"' : ''} href="${url}">${name}</a></li>`).join('')}</ul></details></nav>`;
+header.innerHTML = `<nav class="nav container" aria-label="Navegación principal"><a class="brand" href="${root}index.html"><img src="${root}assets/mexico-flag-icon.jpg" alt="Bandera de México"><span>Ciudadanía<br><strong>Digital México</strong></span></a><details class="menu"><summary>Menú</summary><ul>${links.map(([name,url]) => `<li><a ${url.endsWith(current) ? 'aria-current="page"' : ''} href="${url}">${name}</a></li>`).join('')}</ul></details></nav>`;
+const menu = header.querySelector('.menu');
+const mobileMenu = window.matchMedia('(max-width: 850px)');
+const syncMenu = event => { menu.open = !event.matches; };
+syncMenu(mobileMenu);
+mobileMenu.addEventListener('change', syncMenu);
 document.querySelector('#site-footer').innerHTML = `<div class="container footer-grid"><div><strong>Ciudadanía Digital México</strong><p>Proyecto educativo sin fines de lucro · Versión 3.0</p></div><div class="social"><span aria-disabled="true">Instagram</span><span aria-disabled="true">YouTube</span><span aria-disabled="true">X</span><small>Próximamente</small></div></div><p class="copyright">© 2026 · Construyamos un México más digital, incluyente y seguro.</p>`;
 const quiz = document.querySelector('#quiz');
 if (quiz) quiz.addEventListener('submit', event => {
