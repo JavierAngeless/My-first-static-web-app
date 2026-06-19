@@ -18,8 +18,8 @@ const quiz = document.querySelector('#quiz');
 if (quiz) quiz.addEventListener('submit', event => {
   event.preventDefault();
   const answers = new FormData(quiz);
-  const score = ['q1','q2','q3','q4','q5'].filter(key => answers.get(key) === '1').length;
+  const score = ['q1','q2','q3','q4','q5','q6','q7','q8'].filter(key => answers.get(key) === '1').length;
   const result = document.querySelector('#quiz-result');
-  result.textContent = `Resultado: ${score} de 5. ${score >= 4 ? '¡Excelente criterio digital!' : score >= 3 ? 'Buen inicio; sigue practicando.' : 'Conviene repasar Ciudadanía Digital.'}`;
+  result.textContent = `Resultado: ${score} de 8. ${score >= 7 ? 'Tienes buenos hábitos de ciudadanía digital. Continúa usando la tecnología de forma crítica, segura y responsable.' : score >= 4 ? 'Tienes prácticas aceptables, pero aún puedes mejorar en seguridad, privacidad y participación responsable.' : 'Necesitas fortalecer tus hábitos digitales. Comienza por proteger tus datos, verificar fuentes y usar internet con mayor precaución.'}`;
   result.focus();
 });
